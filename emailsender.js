@@ -3,17 +3,19 @@ import nodemailer from 'nodemailer';
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
+    secure: true,
+    port: 465,
     auth:{
-        user: 'rohxama@gmail.com',
-        pass: 'pmlh teem bwwy ycux'
+        user: 'criminal87654@gmail.com',
+        pass: 'epal mpvi gmjb ssau'
     }
 });
 
 var mailOptions = {
-    from: 'rohxama@gmail.com',
-    to: 'criminal87654@gmail.com',
+    from: 'criminal87654@gmail.com',
+    to: 'rohxama@gmail.com',
     subject: 'Sending email using node js library',
-    text: 'Hello World'
+    text: 'Hello jee'
 }
 
 transporter.sendMail(mailOptions, function (error, info) {
